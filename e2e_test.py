@@ -16,12 +16,10 @@ import urllib2
 import logging
 
 # The circle.yml deploys to version 1, which maps to this URL
-HOST='https://1-dot-continuous-deployment-circle.appspot.com/'
+HOST='https://tidy-scholar-167321.appspot.com/'
 
 # [START e2e]
 response = urllib2.urlopen("{}/get_author/ulysses".format(HOST))
 html = response.read()
 assert(html == "James Joyce")
 # [END e2e]
-
-
